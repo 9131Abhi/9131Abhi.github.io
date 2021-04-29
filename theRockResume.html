@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: grey;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav img{
+height:60px;
+width:150px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column img{
+height:900px;
+width:700px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+<img src="https://www.rebelsport.com.au/on/demandware.static/-/Library-Sites-rebel-shared-library/default/dw299e15d2/launches/190919-REBEL-UA-ProjectRock/190919-REBEL-UA-ProjectRock-BTB-Logo-BW.png" alt="Girl in a jacket">
+ <a href="#" style="color:blue; margin-left:50px">Say hiii</a>
+  <a href="#">Contacts</a>
+  <a href="#">Skills</a>
+  <a href="#">Recent</a>
+  <a href="#">Clients</a>
+  <a href="#">Home</a>
+  <div class="row">
+  <div class="column">
+  <img src="https://assets.vogue.com/photos/59132f18dc6868483f55b55a/master/w_2560%2Cc_limit/00-lede-the-rock.jpg">
+  </div>
+  
+  <div class="column" style="margin-top:150px">
+  <h1>Hello I am the <br>Abhishek</h1>
+  <p>Hey in this video i wiil be showing you guys how to build a website using only HTML and CSS</p>
+  <button style="font-size:30px; padding:10px 80px; border-radius:30px">See My Resume</button>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
